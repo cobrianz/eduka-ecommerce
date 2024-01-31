@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Poppins:wght@400;500;600;700;800;900&family=Rubik+Mono+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    appearance: none;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+      /*  
+    font-family: 'Inter', sans-serif;
+    font-family: 'Rubik Mono One', monospace;
+    */
+} 
+
+:root{
+    --btn-border: 6px;
+    --background: #292929;
+    --color: #fff;
+    --transition: 300ms ease-in-out;
+} 
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 90vw;
+    margin: 2rem auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem .5rem;
+ /*    background: #afafaf40;
+    box-shadow: 0 8px 32px 0 #9595965e;
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid #ffffff2e; */
+}
+
+nav .logo h1 {
+    font-size: 2rem;
+    font-family: 'Rubik Mono One', monospace;
+    color: white;
+    -webkit-text-stroke: 1px var(--background);
+    transition: 400ms ease-in-out;
+}
+
+nav .logo h1:hover {
+    -webkit-text-stroke: unset;
+    color: var(--background);
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    font-weight: 400;
+    align-items: center;
+}
+
+nav ul li a {
+    color: var(--background);
+    transition: var(--transition);
+}
+
+nav ul li a:hover {
+    color: #6a5acd;
+}
+
+.btn {
+    background: var(--background);
+    padding: 6px 20px;
+    border-radius: 6px;
+    color: var(--color);
+    font-weight: bold;
+    transition: var(--transition);
+    width: fit-content;
+}
+
+.btn:hover {
+    background: var(--color);
+    color: var(--background);
+    border: 1px solid var(--background);
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 90vh;  
+    background-image: url(./assets/images/hero-1.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero h2 {
+    font-size: 5rem;
+}
+
+.hero span {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+}
