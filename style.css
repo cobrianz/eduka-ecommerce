@@ -272,6 +272,7 @@ DEALS OF THE MONTH SECTION
     align-items: center;
     background-color: #f8f8f8;
     padding: 2rem;
+    border-radius: 4px 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .featured__title {
@@ -308,4 +309,76 @@ DEALS OF THE MONTH SECTION
 
 .featured__right img{
     height: 700px;
+}
+
+
+/* 
+
+SERVICES SECTION
+
+*/
+
+.services__container {
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: var(--color);
+}
+
+.services__container .service {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.services__container .service span {
+    font-size: 2rem;
+    color: var(--background);
+}
+
+.services__container .service h3 {
+    font-size: 1.5rem;
+    color: var(--background);
+}
+
+.services__container .service small {
+    font-size: 14px;
+    font-weight: bold;
+    color: #646464;
+}
+
+
+/*
+
+FOOTER SECTION
+
+*/
+
+footer {
+    background: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    color: var(--color);
+}
+
+footer h1 {
+    margin-left: 4.5vw;
+}
+
+
+footer .social__icons {
+    width: fit-content;
+    margin-right: 4.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer .social__icons a img {
+    background: transparent;
 }
