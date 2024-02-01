@@ -13,9 +13,13 @@
     */
 } 
 
+body {
+    background: #fff;
+}
+
 :root{
     --btn-border: 6px;
-    --background: #292929;
+    --background: #414040;
     --color: #fff;
     --transition: 300ms ease-in-out;
 } 
@@ -42,12 +46,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem .5rem;
- /*    background: #afafaf40;
-    box-shadow: 0 8px 32px 0 #9595965e;
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
-    border-radius: 10px;
-    border: 1px solid #ffffff2e; */
 }
 
 nav .logo h1 {
@@ -87,6 +85,7 @@ nav ul li a:hover {
     font-weight: bold;
     transition: var(--transition);
     width: fit-content;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -98,21 +97,83 @@ nav ul li a:hover {
 /* HERO SECTION */
 
 .hero {
-    min-height: 90vh;  
+    min-height: 80vh;  
     background-image: url(./assets/images/hero-1.png);
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+    padding-left: 8rem;
+    background-color: #ebedf1;
+    overflow: hidden;
 }
 
 .hero h2 {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .hero span {
     font-size: 2rem;
     font-family: 'Inter', sans-serif;
+}
+
+/* 
+
+CATEGORIES SECTION
+
+*/
+
+.section__container .category__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section__container .category__title span:first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--background);
+}
+
+.section__container .category__title span:last-child:hover {
+    color: #6a5acd;
+    cursor: pointer;
+}
+
+.categories {
+    width: 60%;
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.categories a {
+    width: 300px;
+    height: fit-content;
+    background: #ebedf1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+
+.categories a img {
+    height: 250px;
+}
+
+.categories a span {
+    margin-bottom: 3rem;
+    background: #fff;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+    color: var(--background);
+    padding: 12px ;
+    border-radius: var(--btn-border);
 }
