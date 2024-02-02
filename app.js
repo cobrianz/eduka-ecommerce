@@ -1,24 +1,38 @@
-(function () {
+document.addEventListener("DOMContentLoaded", function () {
     const asideSpans = document.querySelectorAll('.aside__span');
-    const contentDivs = document.querySelectorAll('.main > div');
+    const mainSections = document.querySelectorAll('.main');
+    const viewOrderLinks = document.querySelectorAll('.my__orders a');
 
-    asideSpans.forEach(function (span, index) {
-        span.addEventListener('click', function () {
-            // Hide all content divs
-            contentDivs.forEach(function (div) {
-                div.style.display = 'none';
-            });
+    // Function to remove 'active-aside__span' class from all spans
+    const removeActiveClass = () => {
+        asideSpans.forEach(s => s.classList.remove('active-aside__span'));
+    };
 
-            // Show the corresponding content div
-            contentDivs[index].style.display = 'flex';
-
-            // Remove "active-btn" class from all spans
-            asideSpans.forEach(function (s) {
-                s.classList.remove('active-aside__span');
-            });
-
-            // Add "active-aside__span" class to the clicked span
-            this.classList.add('active-aside__span');
+    asideSpans.forEach((span, index) => {
+        span.addEventListener('click', () => {
+            removeActiveClass();
+            span.classList.add('active-aside__span');
+            mainSections.forEach(section => section.style.display = 'none');
+            mainSections[index].style.display = 'block';
         });
     });
-})();
+
+    viewOrderLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            removeActiveClass();
+            mainSections.forEach(section => section.style.display = 'none');
+            const orderDetailsIndex = mainSections.length - 1; // Assuming order details is the last section
+            mainSections[orderDetailsIndex].style.display = 'block';
+        });
+    });
+
+    // Set default open section (Personal Information)
+    const defaultSectionIndex = 0;
+    asideSpans[defaultSectionIndex].classList.add('active-aside__span');
+    mainSections.forEach((section, index) => {
+        section.style.display = index === defaultSectionIndex ? 'block' : 'none';
+    });
+});
+
+
