@@ -514,6 +514,7 @@ ACCOUNT SECTION
 }
 
 .account__hero aside {
+    position: sticky;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -541,6 +542,13 @@ ACCOUNT SECTION
     color: var(--background);
 }
 
+.account__user  {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
 .account__user i {
     font-size: 3rem;
 }
@@ -560,8 +568,8 @@ ACCOUNT SECTION
 }
 
 .account__hero main {
-    width: 100%;
-   
+    margin-left: 20%;
+    padding: 1rem;
 }
 
 .account__hero main form input {
@@ -574,6 +582,7 @@ ACCOUNT SECTION
 
 
 .purchase__info {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -589,6 +598,50 @@ ACCOUNT SECTION
 .Purchased__item img {
     width: 5rem;
 }
+
+.purchased__item-details small{
+    font-weight: bold;
+}
+
+.purchased__item-details span {
+    font-size: 12px;
+}
+
+.my__orders {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order__details {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.main {
+    display: none;
+    transform: translateY(-100%) scale(0);
+    transition: all 0.4s ease-in-out;
+    background-color: var(--color-primary);
+    background: white;
+}
+  
+  .active {
+    display: block;
+    animation: appear 1s ease-in-out;
+    transform: translateY(0) scaleY(1);
+  }
+
+.active-aside__span {
+    background: #cec9f0;
+    border-radius: 6px;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+.active-aside__span i {
+    color: #000;
+}
 /* 
 
 THANK YOU SECTION 
@@ -596,7 +649,7 @@ THANK YOU SECTION
 */
 
 .thanks__hero {
-    height: 60vh;
+    height: 49.4vh;
     display: flex;
     flex-direction: column;
     align-items: center;
