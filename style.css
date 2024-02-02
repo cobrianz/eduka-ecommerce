@@ -48,7 +48,7 @@ nav {
     padding: 1rem .5rem;
 }
 
-nav .logo h1 {
+.logo h1 {
     font-size: 2rem;
     font-family: 'Rubik Mono One', monospace;
     color: white;
@@ -56,7 +56,7 @@ nav .logo h1 {
     transition: 400ms ease-in-out;
 }
 
-nav .logo h1:hover {
+.logo h1:hover {
     -webkit-text-stroke: unset;
     color: var(--background);
 }
@@ -397,6 +397,10 @@ SIGNUP SECTION
     background: #ebedf1;
 }
 
+.signup__coontainer .logo {
+    margin: 2rem 5rem;
+}
+
 .signup__thumbnail{
     width: 50%;
     height: 100vh;
@@ -433,6 +437,10 @@ form input {
     border-radius: 6px;
 }
 
+form small {
+    color: var(--background);
+}
+
 .form__btn {
     width: 100%;
 }
@@ -463,3 +471,29 @@ SIGNIN SECTION
 }
 
 
+/* 
+
+SIGNIN SECTION
+
+*/
+
+.forgot__password-thumbnail {
+    width: 50%;
+    height: 100vh;
+    background-image: url(./assets/images/image-2.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.form> small a {
+    display: flex;
+    align-items: center;
+    color: var(--background);
+    font-size: 1rem;
+    gap: .4rem;
+}
+
+
+.form> small a img {
+    width: 1rem;
+}
