@@ -767,7 +767,6 @@ SHOP SECTION
 .shop__collection {
     display: flex;
     justify-content: center;
-    background: red;
     padding-top: 1rem;
 }
 
