@@ -718,3 +718,41 @@ SHOP SECTION
     display: flex;
     justify-content: space-between;
 }
+
+.shop__container  .shop__aside {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background: var(--color);
+    height: 70vh;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+
+}
+
+.shop__container aside span {
+    display: flex;
+    font-size: 1.2rem;
+    color: var(--background);
+    align-items: center;
+    gap: 1rem;
+}
+
+.shop__container aside span input {
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid var(--background);
+}
+
+
+.shop__container aside span input[type="radio"] {
+    border-radius: 50%;
+}
+
+.shop__sort {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
