@@ -728,6 +728,7 @@ SHOP SECTION
     gap: 2rem;
     padding: 2rem;
     border-radius: 1rem;
+    z-index: 2;
 
 }
 
