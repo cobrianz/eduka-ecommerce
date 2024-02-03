@@ -756,3 +756,24 @@ SHOP SECTION
     gap: 1rem;
 }
 
+.shop__items {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    position: relative;
+    left: 20%;
+}
+
+.shop__collection {
+    display: flex;
+    justify-content: center;
+    background: red;
+    padding-top: 1rem;
+}
+
+.shop__collection-item 
+
+.shop__collection-item img{
+    width: 300px;
+    height: 350px;
+}
