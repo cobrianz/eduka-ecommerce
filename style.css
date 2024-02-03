@@ -837,6 +837,7 @@ MEDIUM SCREEN TABLETS AND PHONES
     .text__stroke {
         color: white;
         -webkit-text-stroke: 1px var(--background);
+        
     }
 
     .signup__form-container {
@@ -868,11 +869,12 @@ MEDIUM SCREEN TABLETS AND PHONES
 
     .hero {
         width: 100%;
-        align-items: center;
+        padding: 2rem;
+        overflow: hidden;
     }
     
     .hero h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
 }
