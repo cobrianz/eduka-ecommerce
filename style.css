@@ -790,3 +790,39 @@ SHOP SECTION
 .shop__collection-item .description {
     width: 100%;
 }
+
+/* 
+
+MEDIA QEURY RESPONSIVENESS
+
+*/
+
+/* 
+
+LARGE SCREEN TABLETS AND PHONES
+
+*/
+
+@media screen and (max-width: 768px) {
+    
+}
+
+/* 
+
+MEDIUM SCREEN TABLETS AND PHONES
+
+*/
+
+@media screen and (max-width: 768px) {
+    
+}
+
+/* 
+
+SMALL SCREEN PHONES
+
+*/
+
+@media screen and (max-width: 768px) {
+    
+}
