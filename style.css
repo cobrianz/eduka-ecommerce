@@ -720,11 +720,11 @@ SHOP SECTION
 }
 
 .shop__container  .shop__aside {
+    width: fit-content;
     display: flex;
     flex-direction: column;
     position: fixed;
     background: var(--color);
-    height: 70vh;
     gap: 2rem;
     padding: 2rem;
     border-radius: 1rem;
@@ -733,7 +733,6 @@ SHOP SECTION
 
 .shop__container aside span {
     display: flex;
-    font-size: 1.2rem;
     color: var(--background);
     align-items: center;
     gap: 1rem;
@@ -757,25 +756,36 @@ SHOP SECTION
 }
 
 .shop__items {
+    width: 80%;
     display: flex;
-    width: 70%;
     flex-direction: column;
     position: relative;
     left: 20%;
 }
 
 .shop__collection {
+    width: 100%;
     display: flex;
-    justify-content: center;
     padding-top: 1rem;
+    justify-content: start;
+    padding: 2rem;
 }
 
 .shop__collection-item {
-  width: 300px;
+  background-color: var(--color);
+  width: 280px;
   cursor: pointer;
+  padding: 2rem;
+  border-radius: 1rem;  
 }
 
 .shop__collection-item img{
-    height: 350px;
-    width: 300px;
+    background-color: var(--color);
+    border-radius: 1rem;
+    width: 200px;
+    height: 240px;
+}
+
+.shop__collection-item .description {
+    width: 100%;
 }
