@@ -708,3 +708,13 @@ THANK YOU SECTION
 }
 
 
+/* 
+
+SHOP SECTION
+
+*/
+
+.shop__container {
+    display: flex;
+    justify-content: space-between;
+}
