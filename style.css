@@ -819,6 +819,15 @@ LARGE SCREEN TABLETS AND PHONES
     .hero span {
         font-size: 1rem;
     }
+
+    .categories {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .categories a img {
+        width: 80%;
+    }
 }   
 
 /* 
@@ -877,6 +886,17 @@ MEDIUM SCREEN TABLETS AND PHONES
         font-size: 2rem;
     }
 
+    .categories a {
+        width: 200px;
+        height: 300px;
+        padding: 1rem;
+    }
+
+    .categories a img {
+        width: 200px;
+    }
+
+    
 }
 
 /* 
@@ -894,4 +914,6 @@ SMALL SCREEN PHONES
     .hero span {
         font-size: 16px;
     }
+
+
 }
