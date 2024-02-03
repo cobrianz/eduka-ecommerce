@@ -215,20 +215,18 @@ NEW COLLECTION SECTION
 }
 
 .collection {
+    width: 350px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .collection img {
-    width: 350px;
+    width: 300px;
     padding: 2rem;
     background: #ebedf1;
     border-radius: var(--btn-border);
     height: 400px;
-    margin: auto;
-
-
 }
 
 .collection .description {
@@ -730,7 +728,9 @@ SHOP SECTION
 
 .aside__toggler {
     position: fixed;;
-    left: 0;
+    right: 0;
+    bottom: 20%;
+    transform: rotate(180deg);
     background: var(--background);
     width: 2rem;
     height: 1rem;
@@ -819,6 +819,7 @@ SHOP SECTION
   cursor: pointer;
   padding: 2rem;
   border-radius: 1rem;  
+ 
 }
 
 .shop__collection-item img{
@@ -878,6 +879,8 @@ LARGE SCREEN TABLETS AND PHONES
     .collection{
         width: 260px;
         margin: 0;
+        background: var(--color);
+        border-radius: var(--btn-border);
     }
 
     .collection img {
@@ -924,15 +927,15 @@ LARGE SCREEN TABLETS AND PHONES
     left: 5vw;
    }
    
-.shop__collection-item {
-    width: 200px;
+    .shop__collection-item {
+        width: 300px;
 
-  }
+    }
 
-  .shop__collection-item img {
-    width: 120px;
-    height: 140px;
-  }
+    .shop__collection-item img {
+        width: 160px;
+        height: 200px;
+    }
 
   .aside__toggler {
     display: flex;
@@ -1035,21 +1038,21 @@ MEDIUM SCREEN TABLETS AND PHONES
     }
 
     .shop__collection {
-        background: red;
-        width: 100vw;
+        width: 100%;
         padding: 0;
+        margin: 0;
     }
-
-    .shop__collection-item {
-        width: 160px;
-
-      }
     
-      .shop__collection-item img {
-        width: 150px;
-        height: 150px;
-        background: red;
-        margin: auto;
+    .shop__collection-item {
+        width: 175px;
+        height: fit-content;
+        margin: 0;
+        
+    }
+    
+    .shop__collection-item img {
+        width: 140px;
+        height: 130px;
       }
     
     
