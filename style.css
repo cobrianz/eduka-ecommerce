@@ -48,7 +48,7 @@ nav {
     padding: 1rem .5rem;
 }
 
-nav .fa-bars, nav .fa-times {
+nav > .fa-bars, nav > .fa-times {
     position: absolute;
     right: 5vw;
     font-size: 1.5rem;
@@ -215,13 +215,13 @@ NEW COLLECTION SECTION
     padding: 1rem;
 }
 
-.new__collection .collection {
-    background: #ebedf1;
-    width: 350px;
+.collection {
     display: flex;
-    border-radius: var(--btn-border);
     flex-direction: column;
-    justify-content: space-between;
+    width: 280px;
+    background: #ebedf1;
+    border-radius: .5rem;
+   justify-content: space-around;
 }
 
 .new__collection .collection:hover {
@@ -898,18 +898,6 @@ LARGE SCREEN TABLETS AND PHONES
         margin: 2rem 0;
     }
 
-    .new__collection {
-        width: 100%;
-        gap: 2rem;
-    }
-
-    .collection{
-        width: 260px;
-        margin: 0;
-        background: var(--color);
-        border-radius: var(--btn-border);
-    }
-
     .collection img {
         width: 200px;
         height: 300px;
@@ -1035,12 +1023,8 @@ MEDIUM SCREEN TABLETS AND PHONES
 
     }
 
-   nav .fa-bars {
+   nav > .fa-bars {
         display: flex;
-    }
-
-   nav .fa-times{
-        display: none;
     }
 
     .hero {
