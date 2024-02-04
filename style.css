@@ -222,6 +222,11 @@ NEW COLLECTION SECTION
     flex-direction: column;
 }
 
+.new__collection .collection:hover {
+    transform: scale(0.98);
+    transition: all 300ms ease;
+}
+
 .collection img {
     align-self: center;
     width: 100%;
@@ -935,9 +940,9 @@ LARGE SCREEN TABLETS AND PHONES
     font-size: 12px;
    }
    
-    .shop__collection-item {
+    .shop__items .shop__collection-item {
         width: 300px;
-        background: red;
+        background: var(--color);
 
     }
 
