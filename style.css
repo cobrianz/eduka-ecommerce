@@ -212,14 +212,14 @@ NEW COLLECTION SECTION
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+    padding: 1rem;
 }
 
-.collection {
+.new__collection .collection {
+    background: #ebedf1;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    background-color: var(--background);
 }
 
 .collection img {
@@ -230,13 +230,20 @@ NEW COLLECTION SECTION
 }
 
 .collection .description {
+    width: 90%;
     font-size: 14px;
     color: var(--background);
+    margin: .5rem;
 }
 
 .collection span {
+    margin-left: .5rem;
     font-weight: bold;
     color: var(--background);
+}
+
+.collection small {
+    margin: .5rem;
 }
 
 .page__counter {
@@ -930,6 +937,7 @@ LARGE SCREEN TABLETS AND PHONES
    
     .shop__collection-item {
         width: 300px;
+        background: red;
 
     }
 
