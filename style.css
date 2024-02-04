@@ -48,7 +48,7 @@ nav {
     padding: 1rem .5rem;
 }
 
-nav .fa-bars, .fa-times {
+nav .fa-bars, nav .fa-times {
     position: absolute;
     right: 5vw;
     font-size: 1.5rem;
@@ -217,9 +217,11 @@ NEW COLLECTION SECTION
 
 .new__collection .collection {
     background: #ebedf1;
-    width: 100%;
+    width: 350px;
     display: flex;
+    border-radius: var(--btn-border);
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .new__collection .collection:hover {
@@ -229,7 +231,7 @@ NEW COLLECTION SECTION
 
 .collection img {
     align-self: center;
-    width: 100%;
+    width: 200px;
     padding: 2rem;
     border-radius: var(--btn-border);
 }
