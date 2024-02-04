@@ -1008,7 +1008,7 @@ MEDIUM SCREEN TABLETS AND PHONES
 
     nav ul {
         flex-direction: column;
-        background: #ebedf1;
+        background: var(--color);
         padding: 2rem;
         align-items: start;
         margin-top: 3rem;

@@ -23,8 +23,7 @@ const aside = document.querySelector('.shop__aside');
 
 
 asideToggler.addEventListener('click', () => {
-    aside.classList.toggle.remove('shop__aside');   
-    aside.classList.toggle.add('shop__aside shop__aside-active');   
+    aside.classList.toggle('shop__aside shop__aside-active');   
 });
 
 
