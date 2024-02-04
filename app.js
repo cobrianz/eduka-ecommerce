@@ -16,7 +16,21 @@ closeMenu.addEventListener('click', () => {
     
 });
 
+//Shop aside javascript
 
+const asideToggler = document.querySelector('.aside__toggler');
+const aside = document.querySelector('.shop__aside');
+
+
+asideToggler.addEventListener('click', () => {
+    aside.style.display = 'flex';
+    asideToggler.style.transform = 'rotate(10deg)';
+    
+});
+
+asideToggler.addEventListener('click', () => {
+    aside.style.display = 'none';    
+});
 
 
 
