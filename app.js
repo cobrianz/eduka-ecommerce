@@ -21,10 +21,10 @@ closeMenu.addEventListener('click', () => {
 const asideToggler = document.querySelector('.aside__toggler');
 const aside = document.querySelector('.shop__aside');
 
-
 asideToggler.addEventListener('click', () => {
-    aside.classList.toggle('shop__aside shop__aside-active');   
+    aside.classList.toggle('shop__aside-active');
 });
+;
 
 
 
