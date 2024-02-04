@@ -267,6 +267,12 @@ NEW COLLECTION SECTION
 }
 
 
+.page__counter strong:hover {
+    border: none;
+    transition: var(--transition);
+    
+}
+
 .page__counter strong img {
     width: 1rem;
 }
@@ -279,6 +285,11 @@ NEW COLLECTION SECTION
     font-weight: bold;
 }
 
+.page__counter strong img:hover{
+    filter: invert();
+    transition: var(--transition);
+    background: var(--color);
+}
 
 /* 
 
