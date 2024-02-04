@@ -441,9 +441,11 @@ SIGNUP SECTION
 .signup__form-container {
     width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 .form {
     width: 50%;
@@ -938,7 +940,10 @@ LARGE SCREEN TABLETS AND PHONES
    }
     
    .shop__aside {
+    width: 90%;
+    height: 80vh;
     left: -120%;
+    gap: 1rem;
     transition: var(--transition);
    }
 
@@ -946,10 +951,18 @@ LARGE SCREEN TABLETS AND PHONES
     left: initial;
    }
 
+   .shop__aside input {
+    width: .5rem;
+    height: .5rem;
+   }
+
+
    .shop__collection {
     width: 100%;
     margin: 0;
    }
+
+
 
    .shop__items .section__subtitle {
     left: 5vw;
@@ -969,6 +982,7 @@ LARGE SCREEN TABLETS AND PHONES
 
   .aside__toggler {
     display: flex;
+    z-index: 99;
   }
 
   .shop__items .section__subtitle {
@@ -1002,6 +1016,9 @@ MEDIUM SCREEN TABLETS AND PHONES
         width: 80%;
     }
 
+    form input {
+        padding: .8rem;
+    }
     nav {
         align-items: start;
     }
