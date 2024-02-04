@@ -991,7 +991,7 @@ MEDIUM SCREEN TABLETS AND PHONES
         display: flex;
     }
 
-    .fa-times{
+   nav .fa-times{
         display: none;
     }
 
