@@ -28,10 +28,6 @@ asideToggler.addEventListener('click', () => {
     
 });
 
-asideToggler.addEventListener('click', () => {
-    aside.style.display = 'none';    
-});
-
 
 
 

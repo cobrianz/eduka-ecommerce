@@ -938,7 +938,12 @@ LARGE SCREEN TABLETS AND PHONES
    }
     
    .shop__aside {
-    display: none;
+    left: -120%;
+    transition: var(--transition);
+   }
+
+   .shop__aside-active {
+    left: initial;
    }
 
    .shop__collection {
