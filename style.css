@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    appearance: none;
+    appearance: unset;
     outline: none;
     border: none;
     font-family: 'Poppins', sans-serif;
@@ -927,6 +927,16 @@ LARGE SCREEN TABLETS AND PHONES
    .shop__items {
     width: 100%;
     position: initial;
+   }
+
+   .thanks__hero{
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+   }
+
+   .thanks__hero h1{
+    font-size: 3rem;
    }
     
    .shop__aside {
