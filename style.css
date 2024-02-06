@@ -24,6 +24,7 @@ body {
     --transition: 300ms ease-in-out;
 } 
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -917,6 +918,10 @@ LARGE SCREEN TABLETS AND PHONES
         flex-direction: column-reverse;
         gap: 1rem;
     }
+
+    .featured__right img {
+        width: 100%;
+    }
     
     .services__container {
         margin: 0 auto;
@@ -1068,8 +1073,8 @@ MEDIUM SCREEN TABLETS AND PHONES
     }
 
     .featured__right img{
-        width: 400px;
-        height: 400px;
+        margin-top: 0;
+        height: 300px;
     }
 
 
