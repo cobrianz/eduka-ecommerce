@@ -994,6 +994,16 @@ LARGE SCREEN TABLETS AND PHONES
     position: initial;
   }
 
+  .Personal__information .signup__form-container{
+    width: 100%;
+  }
+
+  .purchased__item-details > small {
+    font-size: 12px;
+  }
+  .purchased__item-details > div {
+    font-size: 12px;
+  }
 }   
 
 /* 
