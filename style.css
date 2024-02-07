@@ -1094,14 +1094,6 @@ MEDIUM SCREEN TABLETS AND PHONES
         height: fit-content;
         padding-top: 1rem;
     }
-
-    .aside__span p{
-        display: flex;
-    }
-
-    .aside__span i:hover .aside__span p {
-        display: none;
-    }
    
 
     .Purchased__item img {
