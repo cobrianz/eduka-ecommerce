@@ -574,7 +574,13 @@ ACCOUNT SECTION
     color: #6a5acd;
 }
 
-
+.aside__span:hover > i {
+    color: #6a5acd;
+}
+.aside__span i {
+    font-size: 1.2rem;
+    color: var(--background);
+}
 
 .account__user  {
     display: flex;
