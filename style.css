@@ -564,17 +564,17 @@ ACCOUNT SECTION
     cursor: pointer;
 }
 
+.aside__child {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .aside__span:hover > p{
     color: #6a5acd;
 }
 
-.aside__span:hover > i {
-    color: #6a5acd;
-}
-.aside__span i {
-    font-size: 1.2rem;
-    color: var(--background);
-}
+
 
 .account__user  {
     display: flex;
@@ -1094,7 +1094,6 @@ MEDIUM SCREEN TABLETS AND PHONES
         height: fit-content;
         padding-top: 1rem;
     }
-   
 
     .Purchased__item img {
         width: 4rem;
