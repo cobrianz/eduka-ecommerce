@@ -3,11 +3,9 @@ require 'config/constants.php';
 
 //get back form data after an error occurred
 
-$firstname = $_SESSION['signup-data']['firstname'] ?? null;
-$lastname = $_SESSION['signup-data']['lastname'] ?? null;
-$username = $_SESSION['signup-data']['username'] ?? null;
+$name = $_SESSION['signup-data']['name'] ?? null;
 $email = $_SESSION['signup-data']['email'] ?? null;
-$createpassword = $_SESSION['signup-data']['createpassword'] ?? null;
+$password = $_SESSION['signup-data']['password'] ?? null;
 $confirmpassword = $_SESSION['signup-data']['confirmpassword'] ?? null;
 
 
@@ -39,6 +37,18 @@ unset($_SESSION['signup-data']);
         <div class="form">
             <h1>Create Account 👋🏼</h1>
             <small>Please enter details</small>
+            <?php if(isset($_SESSION['signup'])): ?> 
+            <div class="alert__message error">
+            <p><?= $_SESSION['signup'];
+            unset($_SESSION['signup']);
+            ?>
+         </p>    
+        </div>
+        
+        <?php
+            endif
+        ?>
+        
             <form action="<? = ROOT_URL ?>" method="POST">
                 <label for="name">Full Name *</label>
                 <input type="text" name="name" value="<? = $name ?>">
