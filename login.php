@@ -25,6 +25,20 @@ require 'config/constants.php';
             <div class="form">
                 <h1>Welcome 👋🏼</h1>
                 <small>Please login here</small>
+                                <?php if(isset($_SESSION['signup-success'])): ?>
+
+                <div class="alert__message success">
+                <p><?= $_SESSION['signup-success'];
+                unset($_SESSION['signup-success']);
+                ?></p>
+                </div>
+                <?php elseif (isset($_SESSION['signin'])) : ?>
+                <div class="alert__message error">
+                <p><?= $_SESSION['signin'];
+                unset($_SESSION['signin']);
+                ?></p>
+                </div>
+                <?php endif ?>  
                 <form action="#">
                     <label for="name">Email Address *</label>
                     <input type="email">

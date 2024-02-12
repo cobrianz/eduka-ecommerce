@@ -1,5 +1,4 @@
 <?php
-session_start();
 require 'config/database.php';
 
 
@@ -37,7 +36,6 @@ if(!$name){
                             $_SESSION['signup'] = "Email already exist";
                         } else {
                             $time = time();
-                            $id = $time.$password['name']
                         }
                            }
                     }
@@ -52,9 +50,10 @@ if(!$name){
                 die();
                } else {
                 //insert  data into database
-                 $insert_user_query = "INSERT INTO user (id, name, email, password) VALUES ('$id','$name','$email','$hashed_password')";
+                 $insert_user_query = "INSERT INTO user (id, name, email, password) VALUES ('$time','$name','$email','$hashed_password')";
 
                 $insert_user_result = mysqli_query($connection, $insert_user_query);
+               }
 
                  if(!mysqli_errno($connection)){
                     //redirect to login page with success message
@@ -62,8 +61,7 @@ if(!$name){
                     $_SESSION['signup-success'] = "Registration Successfully. Please login";
                     header('location: ' . ROOT_URL .'login.php');
                     die();
-                 }
-               } else{
+                 } else{
 
 //if button was not clicked then back to signup
 
