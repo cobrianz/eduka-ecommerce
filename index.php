@@ -18,9 +18,9 @@
             </div>
         </a>
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./shop.html">Shop</a></li>
-            <li><a href="./login.html" class="btn">Login</a></li>
+            <li><a href="<? = ROOT_URL ?>">Home</a></li>
+            <li><a href="<? = ROOT_URL ?>shop.php">Shop</a></li>
+            <li><a href="<? = ROOT_URL ?>login.php" class="btn">Login</a></li>
         </ul>
         <i class="fa fa-bars"></i>
         <i class="fa fa-times"></i>
