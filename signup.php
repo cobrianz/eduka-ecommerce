@@ -8,7 +8,6 @@ $email = $_SESSION['signup-data']['email'] ?? null;
 $password = $_SESSION['signup-data']['password'] ?? null;
 $confirmpassword = $_SESSION['signup-data']['confirmpassword'] ?? null;
 
-
 //delete the signup data session
 unset($_SESSION['signup-data']);
 
@@ -27,7 +26,7 @@ unset($_SESSION['signup-data']);
 <body>
     <div class="signup__coontainer">
         <div class="signup__thumbnail">
-            <a href="./index.html">
+            <a href="./index.php">
                 <div class="logo">
                     <h1>EDUKA</h1>
                 </div>
@@ -51,16 +50,16 @@ unset($_SESSION['signup-data']);
         
             <form action="<? = ROOT_URL ?>" method="POST">
                 <label for="name">Full Name *</label>
-                <input type="text" name="name" value="<? = $name ?>">
+                <input type="text" name="name" value="<?=$name ?>">
                 <label for="name">Email Address *</label>
-                <input type="email"  name="email" value="<? = $email ?>">
+                <input type="email"  name="email" value="<?=$email ?>">
                 <label for="name">Password *</label>
-                <input type="password"  name="password" value="<? = $password ?>">
+                <input type="password"  name="password" value="<?=$password ?>">
                 <label for="name">Confirm Password *</label>
-                <input type="password"  name="confirmpassword" value="<? = $confirmpassword ?>">
+                <input type="password"  name="confirmpassword" value="<?=$confirmpassword ?>">
                 <button type="submit" class="btn form__btn" name="submit">Sign Up</button>
             </form>
-            <Span style="display: block;">Already have an account? <a href="./login.php">Login</a></Span>
+            <Span style="display: block;">Already have an account? <a href="<?= ROOT_URL ?>login.php">Login</a></Span>
         
         </div> 
         </div>

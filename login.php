@@ -1,3 +1,6 @@
+<?php
+require 'config/constants.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +15,7 @@
 <body>
     <div class="signup__coontainer">
         <div class="signin__thumbnail">
-            <a href="./index.html">
+            <a href="<?= ROOT_URL ?>">
                 <div class="logo">
                     <h1>EDUKA</h1>
                 </div>
@@ -30,8 +33,8 @@
                     <button type="submit" class="btn form__btn">Login</button>
                 </form>
                 <span>
-                    <a href="./signup.html">Create Account?</a>
-                    <a href="./forgot_password.html">Forgot Password?</a>
+                    <a href="signup.php">Create Account?</a>
+                    <a href="forgot_password.php">Forgot Password?</a>
                 </span>
 
             </div>

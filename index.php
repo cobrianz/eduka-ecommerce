@@ -12,7 +12,7 @@
 
 <body>
     <nav class="navbar container">
-        <a href="./index.html">
+        <a href="index.php">
             <div class="logo">
                 <h1>EDUKA</h1>
             </div>
@@ -29,7 +29,7 @@
         <h2>Unleash <strong class="text__stroke">Innovation</strong> <br> in Every <strong
                 class="text__stroke">Byte</strong></h2>
         <span>Explore a World of Cutting-Edge Products</span>
-        <a href="./shop.html"> <button type="button" class="btn hero__btn">Shop Now</button>
+        <a href="shop.php"> <button type="button" class="btn hero__btn">Shop Now</button>
         </a>
     </div>
 
