@@ -35,8 +35,10 @@ if(!$name){
 
                         if (mysqli_num_rows($user_check_result) > 0) {
                             $_SESSION['signup'] = "Email already exist";
-                        } 
-                         
+                        } else {
+                            $time = time();
+                            $id = $time.$password['name']
+                        }
                            }
                     }
                 }
@@ -50,8 +52,7 @@ if(!$name){
                 die();
                } else {
                 //insert  data into database
-                 $insert_user_query = "INSERT INTO users (firstname, lastname, username, email, password, avatar,
-                 is_admin) VALUES ('$firstname','$lastname','$username','$email','$hashed_password','$avatar_name',0)";
+                 $insert_user_query = "INSERT INTO user (id, name, email, password) VALUES ('$id','$name','$email','$hashed_password')";
 
                 $insert_user_result = mysqli_query($connection, $insert_user_query);
 
@@ -59,12 +60,10 @@ if(!$name){
                     //redirect to login page with success message
 
                     $_SESSION['signup-success'] = "Registration Successfully. Please login";
-                    header('location: ' . ROOT_URL .'signin.php');
+                    header('location: ' . ROOT_URL .'login.php');
                     die();
                  }
-               }
-               
-             } else{
+               } else{
 
 //if button was not clicked then back to signup
 

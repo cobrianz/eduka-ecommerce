@@ -48,7 +48,7 @@ unset($_SESSION['signup-data']);
             endif
         ?>
         
-            <form action="<? = ROOT_URL ?>" method="POST">
+            <form action="<?=ROOT_URL?>signup-logic.php" method="POST">
                 <label for="name">Full Name *</label>
                 <input type="text" name="name" value="<?=$name ?>">
                 <label for="name">Email Address *</label>
