@@ -1,5 +1,10 @@
 <?php
 require 'config/constants.php';
+$username_email = $_SESSION['login-data']['username_email'] ?? null;
+$password = $_SESSION['login-data']['password'] ?? null;
+
+unset($_SESSION['login-data']);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,19 +37,19 @@ require 'config/constants.php';
                 unset($_SESSION['signup-success']);
                 ?></p>
                 </div>
-                <?php elseif (isset($_SESSION['signin'])) : ?>
+                <?php elseif (isset($_SESSION['login'])) : ?>
                 <div class="alert__message error">
-                <p><?= $_SESSION['signin'];
-                unset($_SESSION['signin']);
+                <p><?= $_SESSION['login'];
+                unset($_SESSION['login']);
                 ?></p>
                 </div>
                 <?php endif ?>  
-                <form action="#">
+                <form action="<?=ROOT_URL?>login-logic.php" method="POST">
                     <label for="name">Email Address *</label>
-                    <input type="email">
+                    <input type="email" name="email" value = "<?=$email?>">
                     <label for="name">Password *</label>
-                    <input type="password">
-                    <button type="submit" class="btn form__btn">Login</button>
+                    <input type="password"  name = "password" value = "<?= $password?>">
+                    <button type="submit" name="submit" class="btn form__btn">Login</button>
                 </form>
                 <span>
                     <a href="signup.php">Create Account?</a>
