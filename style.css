@@ -49,7 +49,7 @@ li {
 
 .alert__message p {
     font-size: 1rem;
-    padding: 1rem 0;   
+    padding: 1rem .5rem;   
 }
 
 .success {

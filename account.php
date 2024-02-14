@@ -52,7 +52,7 @@
             </span>
             <span class="aside__span">
                 <i class="fa fa-sign-out" aria-hidden="true" style="color: red;"></i>
-                <p><a href="./logout.html" style="color: #c27272;">Logout</a></p>
+                <p><a href="./logout.php" style="color: #c27272;">Logout</a></p>
             </span>
         </aside>
 

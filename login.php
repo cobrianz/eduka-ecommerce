@@ -1,6 +1,6 @@
 <?php
 require 'config/constants.php';
-$username_email = $_SESSION['login-data']['username_email'] ?? null;
+$email = $_SESSION['login-data']['email'] ?? null;
 $password = $_SESSION['login-data']['password'] ?? null;
 
 unset($_SESSION['login-data']);
@@ -30,11 +30,11 @@ unset($_SESSION['login-data']);
             <div class="form">
                 <h1>Welcome 👋🏼</h1>
                 <small>Please login here</small>
-                                <?php if(isset($_SESSION['signup-success'])): ?>
+                                <?php if(isset($_SESSION['login-success'])): ?>
 
                 <div class="alert__message success">
-                <p><?= $_SESSION['signup-success'];
-                unset($_SESSION['signup-success']);
+                <p><?= $_SESSION['login-success'];
+                unset($_SESSION['login-success']);
                 ?></p>
                 </div>
                 <?php elseif (isset($_SESSION['login'])) : ?>
